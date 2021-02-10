@@ -1,0 +1,176 @@
+* {
+    background-color: #0f0b20;
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Audiowide';
+}
+
+#game {
+    border: 3px solid #17dd10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Button Styling */
+
+#buttons {
+    margin-left: 200px;
+    margin-top: 230px;
+}
+
+.button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(25, 17, 58);
+    border: none;
+    box-shadow: 0 8px#414040;
+    padding: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.button:hover {
+    background-color: rgb(36, 22, 92);
+}
+
+.button:active {
+    box-shadow: 0 5px #3D3D3D;
+    transform: translateY(5px);
+}
+
+.red {
+    color: #FF0000;
+}
+
+.green {
+    color: #00FF00;
+}
+
+.blue {
+    color: #0000FF;
+}
+
+.yellow {
+    color: #FFFF00;
+}
+
+.round {
+    border-radius: 25%;
+}
+
+
+/* Slider Switch Checkbox */
+
+#weapons {
+    margin-left: 850px;
+    margin-top: 25px;
+}
+
+.switch {
+    position: relative;
+    /* No line-break after the element, so the element can sit next to other elements.*/
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    /* This makes the default checkbox disappear */
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #C0C0C0;
+    height: 34px;
+    border-radius: 20px;
+    /* WebKit */
+    -webkit-transition: 0.5s;
+    /* Mozilla */
+    -moz-transition: 0.5s;
+    /* Opera */
+    -o-transition: 0.5s;
+    /* Internet Explorer */
+    -ms-transition: 0.5s;
+    /* CSS3 */
+    transition: 0.5s;
+}
+
+.toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 5px;
+    bottom: 5px;
+    background-color: #17dd10;
+    border-radius: 20px;
+    /* WebKit */
+    -webkit-transition: 0.5s;
+    /* Mozilla */
+    -moz-transition: 0.5s;
+    /* Opera */
+    -o-transition: 0.5s;
+    /* Internet Explorer */
+    -ms-transition: 0.5s;
+    /* CSS3 */
+    transition: 0.5s;
+}
+
+input:checked+.toggle {
+    background-color: #ee2bd3;
+}
+
+input:checked+.toggle:before {
+    /* WebKit */
+    -webkit-transform: translateX(26px);
+    /* Mozilla */
+    -moz-transform: translateX(26px);
+    /* Opera */
+    -o-transform: translateX(26px);
+    /* Internet Explorer */
+    -ms-transform: translateX(26px);
+    /* CSS3 */
+    transform: translateX(26px);
+}
+
+
+/* Select Styling*/
+
+select {
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #C0C0C0;
+    height: 34px;
+    border-radius: 20px;
+    /* WebKit */
+    -webkit-appearance: none;
+    /* Mozilla */
+    -moz-appearance: none;
+    /* Opera */
+    -o-appearance: none;
+    /* Internet Explorer */
+    -ms-appearance: none;
+    /* CSS3 */
+    appearance: none;
+}
