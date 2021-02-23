@@ -2,8 +2,10 @@ var cacheName = 'alien-pwa';
 var filesToCache = [
     '/',
     '/index.html',
-    '/css/push.css',
-    '/js/script.js'
+    '/css/style.css',
+    '/js/script.js',
+    '/register.js',
+    '/manifest.json'
 ];
 
 /* Cache contents when Offline See Cache */
