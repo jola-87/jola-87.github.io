@@ -2,8 +2,6 @@
     background-color: #0f0b20;
     color: white;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -21,16 +19,16 @@ h1 {
 }
 
 img {
-    height: 50px;
-    width: 50px;
+    width: 100%;
 }
 
 
 /* Button Styling */
 
 #buttons {
-    margin-left: 200px;
-    margin-top: 230px;
+    float: left;
+    width: 20%;
+    padding: 15px;
 }
 
 .button {
@@ -40,7 +38,7 @@ img {
     box-shadow: 0 8px#414040;
     padding: 30px;
     text-align: center;
-    font-size: 28px;
+    font-size: 2em;
 }
 
 .button:hover {
@@ -76,8 +74,9 @@ img {
 /* Slider Switch Checkbox */
 
 #weapons {
-    margin-left: 850px;
-    margin-top: 25px;
+    float: right;
+    width: 20%;
+    padding: 15px;
 }
 
 .switch {
@@ -176,4 +175,14 @@ select {
     -ms-appearance: none;
     /* CSS3 */
     appearance: none;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    #weapons,
+    #buttons,
+    #game {
+        width: 100%;
+        display: block;
+    }
 }
