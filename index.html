@@ -33,69 +33,65 @@
 
     <meta name="theme-color" content="#0f0b20">
 
-
-
 </head>
 
 <body onload="onPageLoad()">
     <h1 id="SCORE" onload="updateScore()">Score: </h1>
-    </br>
+    <br>
     <h1 id="topTxt" onload="weaponSelection()">Select Your Weapon</h1>
-    <h1 id="NPC">
-        <!--NCP Opponent Here-->
-    </h1>
-    </br>
+    <br>
 
-
-    <canvas id="game" width="700" height="500">
+    <div class="flex-container">
+        <canvas id="game" width="700" height="500">
         Oops! looks like your browser does not support canvas tag
-    </canvas>
+        </canvas>
 
-    <div id="buttons">
-        <table>
-            <tbody>
+        <div id="buttons">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><button onclick="buttonOnClick()" id="buttonUp" class="button yellow round">Y</button></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="buttonOnClick()" id="buttonLeft" class="button blue round">X</button></td>
+                        <td>&nbsp;</td>
+                        <td><button onclick="buttonOnClick()" id="buttonRight" class="button red round">B</button></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><button onclick="buttonOnClick()" id="buttonDown" class="button green round">A</button></td>
+                        <td>&nbsp;</td>
+                    </tr>
+            </table>
+        </div>
+        <div id="weapons">
+            <table>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><button onclick="buttonOnClick()" id="buttonUp" class="button yellow round">Y</button></td>
+                    <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><button onclick="buttonOnClick()" id="buttonLeft" class="button blue round">X</button></td>
-                    <td>&nbsp;</td>
-                    <td><button onclick="buttonOnClick()" id="buttonRight" class="button red round">B</button></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td><button onclick="buttonOnClick()" id="buttonDown" class="button green round">A</button></td>
-                    <td>&nbsp;</td>
-                </tr>
-        </table>
-    </div>
-    <div id="weapons">
-        <table>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td colspan="3" align="center">
-                    <div class="custom-select" style="width:200px;">
-                        <select id="equipment" onchange="weaponSelection()">
+                    <td colspan="3">
+                        <div class="custom-select" style="width:200px;">
+                            <select id="equipment" onchange="weaponSelection()">
                     </select>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3" align="center">
-                    <label for="active" class="switch">
-                    <input id="active" onclick="weaponSelection()" type="checkbox">
-                    <span class="toggle"></span>
-                    </label>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label for="active" class="switch">
+                        <input id="active" onclick="weaponSelection()" type="checkbox">
+                        <span class="toggle"></span>
+                        </label>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 <script src="./js/script.js"></script>

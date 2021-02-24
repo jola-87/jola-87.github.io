@@ -106,10 +106,10 @@ moveRight.addEventListener("mouseup", buttonNotPushed);
 var player = new GameObject("Player", "alien.png", 100);
 
 // Gameobjects is a collection of the Actors within the game
-var gameobjects = [player, new GameObject("planetImage", "saturn.png", 100)];
+var gameobjects = [player, new GameObject("planetImage", "earth.png", 100)];
 
 gameobjects[1].x = 500;
-gameobjects[1].y = 350;
+gameobjects[1].y = 70;
 // Process keyboard input event
 function input(event) {
     // Take Input from the Player

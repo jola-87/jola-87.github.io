@@ -4,18 +4,19 @@
     box-sizing: border-box;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1 {
     color: white;
-    text-align: center;
+    text-align: left;
     font-family: 'Audiowide';
 }
 
 #game {
     border: 3px solid #17dd10;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 img {
@@ -26,9 +27,10 @@ img {
 /* Button Styling */
 
 #buttons {
-    float: left;
-    width: 20%;
-    padding: 15px;
+    margin-top: 30px;
+    margin-left: 50px;
+    flex: 50%;
+    align-content: center;
 }
 
 .button {
@@ -74,9 +76,8 @@ img {
 /* Slider Switch Checkbox */
 
 #weapons {
-    float: right;
-    width: 20%;
-    padding: 15px;
+    margin-top: 30px;
+    margin-left: 70px;
 }
 
 .switch {
@@ -183,6 +184,6 @@ select {
     #buttons,
     #game {
         width: 100%;
-        display: block;
+        float: left;
     }
 }
