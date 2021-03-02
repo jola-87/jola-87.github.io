@@ -1,6 +1,6 @@
 * {
     background-color: #0f0b20;
-    color: #FFF;
+    color: white;
     box-sizing: border-box;
 }
 
@@ -10,9 +10,9 @@
 }
 
 h1 {
-    color: #FFF;
+    color: white;
     text-align: left;
-    font-family: Audiowide;
+    font-family: 'Audiowide';
 }
 
 #game {
@@ -23,6 +23,9 @@ img {
     width: 100%;
 }
 
+
+/* Button Styling */
+
 #buttons {
     margin-top: 30px;
     margin-left: 50px;
@@ -32,16 +35,16 @@ img {
 
 .button {
     font-family: 'Press Start 2P', cursive;
-    background-color: #19113a;
+    background-color: rgb(25, 17, 58);
     border: none;
-    box-shadow: 0 8px;
+    box-shadow: 0 8px#414040;
+    padding: 30px;
     text-align: center;
     font-size: 2em;
-    padding: 30px;
 }
 
 .button:hover {
-    background-color: #24165c;
+    background-color: rgb(36, 22, 92);
 }
 
 .button:active {
@@ -50,24 +53,27 @@ img {
 }
 
 .red {
-    color: red;
+    color: #FF0000;
 }
 
 .green {
-    color: #0F0;
+    color: #00FF00;
 }
 
 .blue {
-    color: #00F;
+    color: #0000FF;
 }
 
 .yellow {
-    color: #FF0;
+    color: #FFFF00;
 }
 
 .round {
     border-radius: 25%;
 }
+
+
+/* Slider Switch Checkbox */
 
 #weapons {
     margin-top: 30px;
@@ -76,33 +82,40 @@ img {
 
 .switch {
     position: relative;
+    /* No line-break after the element, so the element can sit next to other elements.*/
     display: inline-block;
     width: 60px;
     height: 34px;
 }
 
 .switch input {
+    /* This makes the default checkbox disappear */
     opacity: 0;
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
 }
 
 .toggle {
     position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid silver;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 1px 1px 1px 1px;
+    border: 1px solid #C0C0C0;
     height: 34px;
     border-radius: 20px;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    transition: .5s;
-    padding: 1px;
+    /* WebKit */
+    -webkit-transition: 0.5s;
+    /* Mozilla */
+    -moz-transition: 0.5s;
+    /* Opera */
+    -o-transition: 0.5s;
+    /* Internet Explorer */
+    -ms-transition: 0.5s;
+    /* CSS3 */
+    transition: 0.5s;
 }
 
 .toggle:before {
@@ -114,11 +127,16 @@ img {
     bottom: 5px;
     background-color: #17dd10;
     border-radius: 20px;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    transition: .5s;
+    /* WebKit */
+    -webkit-transition: 0.5s;
+    /* Mozilla */
+    -moz-transition: 0.5s;
+    /* Opera */
+    -o-transition: 0.5s;
+    /* Internet Explorer */
+    -ms-transition: 0.5s;
+    /* CSS3 */
+    transition: 0.5s;
 }
 
 input:checked+.toggle {
@@ -126,28 +144,42 @@ input:checked+.toggle {
 }
 
 input:checked+.toggle:before {
+    /* WebKit */
     -webkit-transform: translateX(26px);
+    /* Mozilla */
     -moz-transform: translateX(26px);
+    /* Opera */
     -o-transform: translateX(26px);
+    /* Internet Explorer */
     -ms-transform: translateX(26px);
+    /* CSS3 */
     transform: translateX(26px);
 }
 
+
+/* Select Styling*/
+
 select {
     width: 200px;
+    padding: 5px 5px 5px 5px;
     font-size: 16px;
-    border: 1px solid silver;
+    border: 1px solid #C0C0C0;
     height: 34px;
     border-radius: 20px;
+    /* WebKit */
     -webkit-appearance: none;
+    /* Mozilla */
     -moz-appearance: none;
+    /* Opera */
     -o-appearance: none;
+    /* Internet Explorer */
     -ms-appearance: none;
+    /* CSS3 */
     appearance: none;
-    padding: 5px;
 }
 
-@media only screen and(max-width:620px) {
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
     #weapons,
     #buttons,
     #game {
